@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# ملفات CSS و JavaScript
+Allow: /style.css
+Allow: /script.js
+
+# الصور
+Allow: /images/
+
+# خريطة الموقع
+Sitemap: https://asphalt-khamis.com/sitemap.xml
+
+# منع الوصول للملفات غير المرغوب فيها
+Disallow: /*.log$
+Disallow: /*.tmp$
+Disallow: /temp/
+Disallow: /cache/
+
+# معلومات إضافية لمحركات البحث
+# موقع مقاول أسفلت خميس مشيط
+# خدمات رصف الطرق والأسفلت في السعودية

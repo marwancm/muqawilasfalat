@@ -290,6 +290,67 @@ section {
     font-weight: 600;
 }
 
+/* SEO Content Section */
+.seo-content {
+    background: white;
+    padding: 60px 0;
+}
+
+.seo-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seo-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+.seo-text strong {
+    color: #2c5aa0;
+    font-weight: 600;
+}
+
+.service-areas {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.service-areas h3 {
+    color: #2c5aa0;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.service-areas ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.service-areas li {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.service-areas li:before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    color: #f39c12;
+    font-weight: bold;
+}
+
 /* Why Choose Us Section */
 .why-choose-us {
     background: #f8f9fa;
@@ -443,6 +504,35 @@ section {
 
 .info-card:hover .info-content a {
     color: white;
+}
+
+.maps-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #2c5aa0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.maps-link i {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.maps-link:hover {
+    color: #f39c12;
+    transform: translateX(-3px);
+}
+
+.info-card:hover .maps-link {
+    color: white;
+}
+
+.info-card:hover .maps-link:hover {
+    color: #f39c12;
 }
 
 /* Contact Section */
@@ -729,4 +819,49 @@ html {
 /* Scroll Padding for Fixed Header */
 html {
     scroll-padding-top: 80px;
+}
+
+/* Performance Optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .hero,
+    .contact,
+    .footer {
+        display: none;
+    }
+
+    .services,
+    .gallery,
+    .seo-content {
+        page-break-inside: avoid;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        background: #000;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    .service-card,
+    .feature-card {
+        border: 2px solid #000;
+    }
 }
