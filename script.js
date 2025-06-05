@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Initialize map with correct location
 function initializeMap() {
-  // Coordinates for the provided Google Maps link (سعير خميس مشيط)
+  // Coordinates for the provided Google Maps link (عسير خميس مشيط)
   var map = L.map("map").setView([18.2639, 42.7278], 15);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -18,7 +18,7 @@ function initializeMap() {
   var marker = L.marker([18.2639, 42.7278]).addTo(map);
   marker
     .bindPopup(
-      '<b>مقاول أسفلت سعير خميس مشيط</b><br>507691810<br><a href="https://maps.app.goo.gl/Kmxt58vJzbC6EcQf7" target="_blank">عرض في خرائط جوجل</a>'
+      '<b>مقاول أسفلت عسير خميس مشيط</b><br>507691810<br><a href="https://maps.app.goo.gl/Kmxt58vJzbC6EcQf7" target="_blank">عرض في خرائط جوجل</a>'
     )
     .openPopup();
 
